@@ -1,0 +1,40 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: general;
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: forHead;
+  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+$bp-largest: 87.5em; //1400px
+$bp-large: 75em; //1200px
+$bp-medium: 62em; //992px
+$bp-small: 48em; //768px
+$bp-smallest: 36em; //576px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: general;
+  background-color: var(--black);
+  line-height: 1.5;
+}

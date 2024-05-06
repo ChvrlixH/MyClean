@@ -1,0 +1,81 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: forHead;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 8.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.h2-yellow {
+  font-size: 12rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.h2-black {
+  font-size: 12rem;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.h3-yellow {
+  font-size: 4.5rem;
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.h2-white {
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.h3-white {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.h3-white-big {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.icon-yellow {
+  fill: var(--yellow);
+}
+
+.h2-left {
+  text-align: start;
+}

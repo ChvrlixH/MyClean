@@ -1,0 +1,60 @@
+#footer {
+  padding-top: 5rem;
+}
+
+#byAuthor {
+  background-color: #fdce00;
+  text-align: center;
+  padding: 0.5rem 0px;
+
+  p,
+  a {
+    font-size: 14px;
+    color: #000;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 9.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    width: 25%;
+
+    &--left {
+      width: 15.2rem;
+      height: 9.2rem;
+    }
+  }
+
+  &__nav {
+    width: 75%;
+
+    nav {
+      display: flex;
+    }
+    &--list {
+      flex: 1;
+      ul {
+        margin-left: 15rem;
+        li {
+          margin-bottom: 2rem;
+
+          a {
+            font-size: 1.8rem;
+            color: #fff;
+
+            i {
+              padding: 0 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

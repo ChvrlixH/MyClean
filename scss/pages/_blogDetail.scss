@@ -1,0 +1,53 @@
+#blogDetail {
+  padding-top: 5rem;
+}
+
+.blogDetail {
+  &__main {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      width: 50%;
+      padding: 0 1.2rem;
+      margin-top: 8rem;
+
+      &-img {
+        width: 100%;
+        height: 35rem;
+
+        img {
+          filter: grayscale(0.5);
+        }
+      }
+
+      &-content {
+        margin-top: 3rem;
+      }
+    }
+
+    &--right {
+      width: 33.33333333%;
+      padding: 0 1.2rem;
+      margin-top: 4rem;
+
+      .blogDetail__right {
+        &--main {
+          &-box {
+            width: 100%;
+            margin-top: 3rem;
+
+            &-img {
+              width: 100%;
+              height: 25rem;
+            }
+
+            &-content {
+              margin-top: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

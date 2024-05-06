@@ -1,0 +1,60 @@
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn__icon {
+  margin-top: 4rem;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 3.2rem;
+    }
+
+    i {
+      font-size: 2.5rem;
+      margin-left: 4rem;
+      transform: rotate(45deg);
+      font-weight: 900;
+    }
+  }
+}
+
+#head-section {
+  width: 100%;
+  //height: 35rem;
+  padding-top: 5rem;
+
+  .head-menu {
+    a {
+      i svg {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-weight: 900;
+      }
+    }
+    span {
+      color: var(--yellow);
+    }
+  }
+
+  .head-photo {
+    width: 100%;
+    height: 31.5rem;
+    margin-top: 3rem;
+
+    img {
+      filter: grayscale(1);
+    }
+  }
+}

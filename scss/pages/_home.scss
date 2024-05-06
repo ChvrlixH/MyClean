@@ -1,0 +1,292 @@
+/////////----------------HEAD---------------//////////
+
+.head {
+  &__left {
+    margin-top: 9rem;
+    z-index: 1;
+
+    &--box {
+      a {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 3.2rem;
+          font-weight: 500;
+          color: #fff;
+        }
+
+        .head-icon {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
+          background-color: var(--yellow);
+          //text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 3rem;
+
+          i svg {
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    h1 {
+      width: 80rem;
+    }
+    p {
+      color: #fff;
+      width: 40rem;
+      margin: 3rem 0;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    overflow: hidden;
+    z-index: -1;
+
+    img {
+      filter: grayscale(0.2) brightness(0.8);
+    }
+  }
+}
+
+/////////---------------statistics----------------//////////
+
+#statistics {
+  margin-top: 2.5rem;
+  background-color: var(--yellow);
+}
+
+.statistics {
+  &__all {
+    display: flex;
+    justify-content: space-around;
+
+    &--box {
+      text-align: center;
+      h2 {
+        font-size: 7.3rem;
+        font-weight: 400;
+      }
+
+      h5 {
+        font-size: 3.6rem;
+        font-family: forHead;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+#homeAbout {
+  padding-top: 10rem;
+}
+
+.homeAbout {
+  &__all {
+    display: flex;
+
+    &--left {
+      width: 50%;
+
+      .homeAbout__content {
+        width: 47rem;
+        margin-left: 5rem;
+        margin-top: 4rem;
+        color: #fff;
+      }
+      .btn__icon {
+        margin-left: 5rem;
+
+        a {
+          span {
+            color: #fff;
+          }
+
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &--right {
+      width: 50%;
+      height: 50rem;
+    }
+  }
+}
+
+#services {
+  padding-top: 10rem;
+}
+
+.services {
+  h2 {
+    text-align: center;
+  }
+
+  &__boxes {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    &--box {
+      flex: 1;
+      flex-basis: 29rem;
+      max-width: 41.2rem;
+      color: #fff;
+
+      .services__box--img {
+        width: 100%;
+        height: 25rem;
+
+        img {
+          display: block;
+        }
+      }
+
+      .services__box--content {
+        margin-top: 2rem;
+        h2 {
+          text-align: start;
+        }
+
+        a:last-child {
+          text-decoration: underline;
+          font-size: 1.8rem;
+
+          i {
+            margin-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#products {
+  padding-top: 15rem;
+}
+
+.products {
+  &__boxes {
+    @include boxes;
+    margin-bottom: 6rem;
+
+    &--box {
+      @include box;
+
+      .products__box-img {
+        @include box-img;
+      }
+
+      .products__box--content {
+        margin-top: 2rem;
+        min-height: 50%;
+      }
+    }
+  }
+}
+
+#blog {
+  padding-bottom: 10rem;
+  background-color: var(--yellow);
+}
+
+.blog {
+  padding-top: 5rem;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    &--img {
+      width: 45%;
+      height: 40rem;
+
+      img {
+        filter: grayscale(0.4);
+      }
+    }
+
+    &--content {
+      width: 45%;
+
+      h3 {
+        font-size: 4.5rem;
+        font-weight: 400;
+      }
+
+      .btn__icon {
+        a {
+          span {
+            color: #000;
+          }
+          i {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  margin-top: 5rem;
+  padding: 7rem 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__boxes {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--box {
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      color: #fff;
+
+      &:last-child {
+        gap: 3rem;
+      }
+
+      i {
+        svg {
+          fill: var(--yellow);
+        }
+      }
+
+      &-content {
+        margin-left: 3rem;
+        justify-content: center;
+
+        a {
+          display: block;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+#map {
+  margin-top: 5rem;
+}

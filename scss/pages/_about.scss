@@ -1,0 +1,32 @@
+#aboutUs {
+  padding: 7rem 0;
+}
+
+.aboutUs {
+  &__main {
+    margin-top: 5rem;
+    gap: 3rem;
+    display: flex;
+    width: 100%;
+
+    &--left {
+      flex: 1;
+      margin-top: 5rem;
+      align-items: center;
+
+      .about__box--text {
+        color: #fff;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &--right {
+      flex: 1;
+
+      .about__box--img {
+        height: 46rem;
+        width: 100%;
+      }
+    }
+  }
+}
