@@ -1,0 +1,69 @@
+#cars {
+  padding-top: 10rem;
+}
+
+.cars {
+  .h2-cars {
+    text-align: center;
+  }
+
+  .h2-white-big {
+    position: relative;
+    top: -16rem;
+  }
+
+  .btn__cars {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+  }
+
+  .cars__main {
+    margin-top: -8rem;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+
+    &--box {
+      color: #fff;
+      flex: 1;
+      min-width: 41.2rem;
+      max-width: 41.2rem;
+      margin-bottom: 5rem;
+
+      &-img {
+        width: 100%;
+        height: 25rem;
+      }
+
+      &-content {
+        width: 70%;
+        margin-top: 3rem;
+
+        .btn__icon {
+          display: none;
+          margin-top: 0rem;
+
+          a {
+            span {
+              font-size: 2.5rem;
+            }
+
+            i {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cars-head {
+  filter: brightness(70%);
+}

@@ -181,6 +181,38 @@
     }
   }
 
+  .cars {
+    .h2-white-big {
+      font-size: 4.5rem;
+      top: -12rem;
+    }
+
+    .h2-cars {
+      text-align: start;
+    }
+
+    .btn__cars {
+      display: none;
+    }
+
+    &__boxes {
+      padding: 2rem 0;
+      &--box {
+        h2 {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-size: 2.2rem;
+        }
+
+        .btn__icon {
+          display: block;
+        }
+      }
+    }
+  }
+
   .blogs {
     &__main {
       &--box {
@@ -315,6 +347,56 @@
       height: 20rem;
     }
   }
+
+  .carsDetail {
+    &__main {
+      flex-direction: column-reverse;
+      justify-content: center;
+      &--left {
+        width: 100%;
+
+        h2 {
+          font-size: 2.2rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        .car__detail {
+          max-width: 100%;
+        }
+      }
+
+      &--right {
+        width: 100%;
+
+        &-img {
+          .carsDetail__main--img {
+            height: 18.2rem;
+          }
+
+          .carsDetail__all--img {
+            gap: 1.4rem;
+
+            .carsDetail__img {
+              height: 5.9rem;
+
+              &:last-child {
+                &::after {
+                  font-size: 2.2rem;
+                }
+              }
+            }
+          }
+        }
+
+        &-content {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $bp-smallest) {
@@ -403,6 +485,15 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .cars {
+    &__boxes {
+      &--box {
+        min-width: 0;
+        flex-basis: 29rem;
       }
     }
   }

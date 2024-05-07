@@ -516,6 +516,148 @@ img {
   margin-top: 3rem;
 }
 
+#cars {
+  padding-top: 10rem;
+}
+
+.cars .h2-cars {
+  text-align: center;
+}
+.cars .h2-white-big {
+  position: relative;
+  top: -16rem;
+}
+.cars .btn__cars {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+.cars .cars__main {
+  margin-top: -8rem;
+}
+.cars__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+.cars__boxes--box {
+  color: #fff;
+  flex: 1;
+  min-width: 41.2rem;
+  max-width: 41.2rem;
+  margin-bottom: 5rem;
+}
+.cars__boxes--box-img {
+  width: 100%;
+  height: 25rem;
+}
+.cars__boxes--box-content {
+  width: 70%;
+  margin-top: 3rem;
+}
+.cars__boxes--box-content .btn__icon {
+  display: none;
+  margin-top: 0rem;
+}
+.cars__boxes--box-content .btn__icon a span {
+  font-size: 2.5rem;
+}
+.cars__boxes--box-content .btn__icon a i {
+  font-size: 1.8rem;
+}
+
+.cars-head {
+  filter: brightness(70%);
+}
+
+#carsDetail {
+  padding-top: 6rem;
+}
+
+.carsDetail {
+  overflow: hidden;
+  color: #fff;
+}
+.carsDetail__main {
+  display: flex;
+  justify-content: space-between;
+}
+.carsDetail__main--left {
+  width: 40%;
+}
+.carsDetail__main--left h2 {
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+.carsDetail__main--left p {
+  margin: 4rem 0;
+}
+.carsDetail__main--left .car__detail {
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+}
+.carsDetail__main--left .car__detail ul {
+  padding: 1rem;
+  word-break: keep-all;
+}
+.carsDetail__main--left .car__detail ul li {
+  padding: 1rem 0;
+}
+.carsDetail__main--right-img {
+  max-width: 57rem;
+  margin-bottom: 6rem;
+}
+.carsDetail__main--right-img .carsDetail__main--img {
+  height: 40rem;
+  margin-bottom: 3rem;
+  flex: 1;
+}
+.carsDetail__main--right-img .carsDetail__all--img {
+  display: flex;
+  gap: 3rem;
+}
+.carsDetail__main--right-img .carsDetail__all--img .carsDetail__img {
+  flex: 1;
+  max-width: 17rem;
+  height: 12rem;
+}
+.carsDetail__main--right-img .carsDetail__all--img .carsDetail__img:last-child {
+  position: relative;
+}
+.carsDetail__main--right-img .carsDetail__all--img .carsDetail__img:last-child::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.carsDetail__main--right-img .carsDetail__all--img .carsDetail__img:last-child::after {
+  content: "+4";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  top: 25%;
+  font-size: 4.5rem;
+  font-family: forHead;
+}
+.carsDetail__main--right-content {
+  display: flex;
+  justify-content: start;
+}
+.carsDetail__main--right-content i {
+  margin-right: 5rem;
+}
+.carsDetail__main--right-content .carsDetail__content a {
+  display: block;
+  padding-bottom: 0.8rem;
+}
+
 #productsDetail {
   margin-top: 10rem;
   padding-bottom: 5rem;
@@ -750,6 +892,28 @@ img {
     width: 100%;
     margin-top: 2rem;
   }
+  .cars .h2-white-big {
+    font-size: 4.5rem;
+    top: -12rem;
+  }
+  .cars .h2-cars {
+    text-align: start;
+  }
+  .cars .btn__cars {
+    display: none;
+  }
+  .cars__boxes {
+    padding: 2rem 0;
+  }
+  .cars__boxes--box h2 {
+    font-size: 3rem;
+  }
+  .cars__boxes--box h3 {
+    font-size: 2.2rem;
+  }
+  .cars__boxes--box .btn__icon {
+    display: block;
+  }
   .blogs__main--box-content {
     width: 66.66666667%;
   }
@@ -915,6 +1079,40 @@ img {
   .productsDetail__right {
     height: 20rem;
   }
+  .carsDetail__main {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .carsDetail__main--left {
+    width: 100%;
+  }
+  .carsDetail__main--left h2 {
+    font-size: 2.2rem;
+  }
+  .carsDetail__main--left h3 {
+    font-size: 2rem;
+  }
+  .carsDetail__main--left .car__detail {
+    max-width: 100%;
+  }
+  .carsDetail__main--right {
+    width: 100%;
+  }
+  .carsDetail__main--right-img .carsDetail__main--img {
+    height: 18.2rem;
+  }
+  .carsDetail__main--right-img .carsDetail__all--img {
+    gap: 1.4rem;
+  }
+  .carsDetail__main--right-img .carsDetail__all--img .carsDetail__img {
+    height: 5.9rem;
+  }
+  .carsDetail__main--right-img .carsDetail__all--img .carsDetail__img:last-child::after {
+    font-size: 2.2rem;
+  }
+  .carsDetail__main--right-content {
+    margin-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 36em) {
   .footer {
@@ -976,6 +1174,10 @@ img {
   }
   .blogDetail__main--right .blogDetail__right--main h3 {
     font-size: 2.2rem;
+  }
+  .cars__boxes--box {
+    min-width: 0;
+    flex-basis: 29rem;
   }
 }
 @media screen and (min-width: 75em) and (max-width: 87.5em) {
@@ -1081,6 +1283,13 @@ p {
 
 .h2-white {
   font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.h2-white-big {
+  font-size: 12rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
